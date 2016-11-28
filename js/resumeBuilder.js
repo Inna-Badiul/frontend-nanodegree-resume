@@ -149,7 +149,7 @@ projects.display = function() {
         $(".project-entry:last").append(formattedProjects);
 
         if (val.images.length > 0){
-            var formattedImages = HTMLprojectImage.replace("%data%", val.images);
+            var formattedImages = HTMLprojectImage.replace(data, val.images);
             $(".project-entry:last").append(formattedImages);
         }
     });
